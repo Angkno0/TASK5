@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        'header header header header header header'
+        'left middle middle middle middle right'
+        'footer footer footer footer footer footer'
+    }
+}
+.left, 
+.middle,
+.right {
+    padding: 10px;
+    height: 300px;
+}
+
+.left {
+    grid-area: left;
+}
+
+.middle {
+    grid-area: middle;
+}
+
+.right {
+    grid-area: right;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 10px;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: #f8f8f8;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.logo {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+
+.navbar ul {
+list-style: none;
+display: grid;
+grid-template-columns: repeat(4, auto);
+gap: 20px;
+}
+
+.main-container {
+    padding: 20px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr, 8fr, 1fr;
+}
+
+.search-bar {
+    display: grid;
+    margin-bottom: 20px;
+    text-align: left;
+   
+}
+
+.map {
+    display: grid;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.LEFT {
+    display: grid;
+    height: 7em;
+    float: left;
+}
+
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 1em;
+}
+
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    width: 800px;
+}
+
+
+.categorybox {
+padding: 5px;
+background-color: #ffffff;
+border: 1px solid #e2e2e2;
+width: 100px;
+gap: 5px;
+}
+
+.recommendations {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+
+.ad img{
+    display: grid;
+width: 50%;
+align-items: center;
+}
+
+.bildeTilVenstre{
+    height: 7em;
+    float: left;
+  }
+
+.job {
+    display: grid;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
